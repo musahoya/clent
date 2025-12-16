@@ -1,10 +1,11 @@
 {
   "name": "subagent-demo",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "서브 에이전트 개념을 이해하기 위한 데모 프로그램",
   "main": "demo.js",
   "scripts": {
     "demo": "node demo.js",
+    "news": "node news-pipeline-demo.js",
     "start": "node demo.js"
   },
   "keywords": [
@@ -12,7 +13,10 @@
     "subagent",
     "ai",
     "agent",
-    "automation"
+    "automation",
+    "news",
+    "tts",
+    "voice"
   ],
   "author": "",
   "license": "MIT"
