@@ -1,0 +1,19 @@
+{
+  "name": "subagent-demo",
+  "version": "1.0.0",
+  "description": "서브 에이전트 개념을 이해하기 위한 데모 프로그램",
+  "main": "demo.js",
+  "scripts": {
+    "demo": "node demo.js",
+    "start": "node demo.js"
+  },
+  "keywords": [
+    "claude-code",
+    "subagent",
+    "ai",
+    "agent",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT"
+}
