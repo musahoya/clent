@@ -93,20 +93,35 @@ npm start
 ```
 
 ### 2. **🎙️ 자동 뉴스 방송 제작 파이프라인** ⭐ NEW!
-   - 📰 뉴스 수집 에이전트 (RSS/API에서 뉴스 가져오기)
-   - ✂️ 편집자 에이전트 (방송용으로 선별 및 구성)
-   - 📝 대본 작가 에이전트 (TTS 최적화 대본 작성)
-   - 🎙️ 음성 변환 에이전트 (텍스트 → 음성 파일)
+   - 📰 뉴스 수집 에이전트 (Google RSS로 뉴스 가져오기)
+   - 📝 대본 작가 에이전트 (OpenAI GPT로 대본 작성)
+   - 🎙️ 음성 변환 에이전트 (ElevenLabs로 음성 생성)
+   - 🎯 메인 오케스트레이터 (전체 워크플로우 조율)
 
+#### 데모 버전 (시뮬레이션)
 ```bash
 node news-pipeline-demo.js
 # 또는
 npm run news
 ```
 
-**실전 활용:** 매일 자동으로 뉴스를 수집하고 음성 방송을 만들어 팟캐스트/유튜브에 업로드하는 자동화 시스템!
+#### 🔥 실전 버전 (실제 작동) - **완성본!**
+```bash
+cd real-implementation
+pip install -r requirements.txt
 
-👉 **상세 가이드:** [NEWS-AUTOMATION-GUIDE.md](NEWS-AUTOMATION-GUIDE.md)
+# .env 파일에 API 키 설정 후
+python news_pipeline_subagents.py
+```
+
+**실전 활용:**
+- ✅ Google News RSS로 실제 뉴스 수집 (무료!)
+- ✅ ElevenLabs로 고품질 한국어 음성 생성
+- ✅ 매일 자동으로 실행 가능 (Cron/Task Scheduler)
+- ✅ 완전 자동화 (사람 개입 최소)
+
+👉 **데모 가이드:** [NEWS-AUTOMATION-GUIDE.md](NEWS-AUTOMATION-GUIDE.md)
+👉 **실전 가이드:** [real-implementation/README.md](real-implementation/README.md) 🔥
 
 ## 📚 참고 자료
 
